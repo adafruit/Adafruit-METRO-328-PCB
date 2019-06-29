@@ -1,6 +1,7 @@
 ## Adafruit METRO 328 PCB
 
-
+<a href="http://www.adafruit.com/products/2466"><img src="assets/image.jpg?raw=true" width="500px"><br/>
+Click here to purchase one from the Adafruit shop</a>
 
 PCB files for the Adafruit METRO 328. Format is EagleCAD schematic and board layout
 
