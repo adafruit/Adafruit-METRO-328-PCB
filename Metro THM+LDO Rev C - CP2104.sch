@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6611,9 +6611,7 @@ http://www.national.com/dt/lmv_qual.pdf</description>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
 <part name="F2" library="microbuilder" deviceset="PTC" device="_1206NO" value="500mA"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
-<part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
@@ -6682,10 +6680,10 @@ http://www.national.com/dt/lmv_qual.pdf</description>
 <text x="152.4" y="114.3" size="1.778" layer="91" align="center-left">SDA</text>
 <text x="152.4" y="116.84" size="1.778" layer="91" align="center-left">SCL</text>
 <text x="332.74" y="20.32" size="2.54" layer="94" font="vector">Limor Fried &amp; KTOWN</text>
-<text x="195.58" y="233.68" size="1.016" layer="97">Original diode was M7 (1A Si diode)
+<text x="195.58" y="236.22" size="1.016" layer="97">Original diode was M7 (1A Si diode)
 Replacement is 1A Schottky
 Or MOSFET switch</text>
-<text x="167.64" y="233.68" size="1.016" layer="97">Replaced THM with SMT 2.1mm</text>
+<text x="167.64" y="236.22" size="1.016" layer="97">Replaced THM with SMT 2.1mm</text>
 <wire x1="266.7" y1="256.54" x2="266.7" y2="213.36" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="266.7" y1="213.36" x2="266.7" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="266.7" y1="175.26" x2="165.1" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
@@ -6715,7 +6713,7 @@ Cut trace and solder to 3V3 to change</text>
 <wire x1="330.2" y1="175.26" x2="355.6" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="355.6" y1="175.26" x2="383.54" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
 <text x="325.12" y="170.18" size="2.54" layer="94" ratio="15" align="center">RESET LEVEL SHIFTING (3V--&gt;5V)</text>
-<text x="289.56" y="149.86" size="1.778" layer="97"> The FTDI chip outputs 3.3V logic, but with
+<text x="289.56" y="149.86" size="1.778" layer="97"> The CP2104 chip outputs 3.3V logic, but with
  CMOS logic this is right at the limit of logic
  high on a 5V device (5V*0.7=3.5V). If the
  temperature rises, the required transition
@@ -6748,13 +6746,13 @@ Cut trace and solder to 3V3 to change</text>
 <instance part="GND9" gate="1" x="213.36" y="208.28"/>
 <instance part="GND10" gate="1" x="246.38" y="208.28"/>
 <instance part="GND12" gate="1" x="45.72" y="119.38"/>
-<instance part="GND19" gate="1" x="175.26" y="218.44"/>
+<instance part="GND19" gate="1" x="180.34" y="218.44"/>
 <instance part="ON" gate="G$1" x="373.38" y="218.44" rot="R270"/>
 <instance part="GND14" gate="1" x="373.38" y="198.12"/>
 <instance part="P+5" gate="1" x="373.38" y="228.6" smashed="yes">
 <attribute name="VALUE" x="375.285" y="231.14" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D1" gate="G$1" x="180.34" y="228.6"/>
+<instance part="D1" gate="G$1" x="187.96" y="228.6"/>
 <instance part="FD1" gate="G$1" x="375.92" y="27.94"/>
 <instance part="FD2" gate="G$1" x="381" y="27.94"/>
 <instance part="FD3" gate="G$1" x="378.46" y="27.94"/>
@@ -6763,26 +6761,26 @@ Cut trace and solder to 3V3 to change</text>
 <instance part="GND13" gate="1" x="119.38" y="127" rot="R180"/>
 <instance part="L" gate="G$1" x="342.9" y="208.28" rot="R270"/>
 <instance part="GND17" gate="1" x="342.9" y="200.66"/>
-<instance part="T1" gate="A" x="231.14" y="116.84" rot="MR270"/>
+<instance part="T1" gate="A" x="236.22" y="116.84" rot="MR270"/>
 <instance part="GND20" gate="1" x="198.12" y="129.54"/>
 <instance part="GND18" gate="1" x="218.44" y="129.54"/>
 <instance part="P+9" gate="1" x="218.44" y="160.02" smashed="yes">
 <attribute name="VALUE" x="220.345" y="162.56" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+10" gate="1" x="246.38" y="121.92" smashed="yes">
-<attribute name="VALUE" x="248.285" y="124.46" size="1.778" layer="96" rot="R180"/>
+<instance part="P+10" gate="1" x="254" y="121.92" smashed="yes">
+<attribute name="VALUE" x="255.905" y="124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND21" gate="1" x="307.34" y="220.98"/>
+<instance part="GND21" gate="1" x="307.34" y="218.44"/>
 <instance part="C5" gate="G$1" x="17.78" y="104.14" rot="R90"/>
 <instance part="RESET-EN" gate="G$1" x="25.4" y="109.22" smashed="yes">
 <attribute name="NAME" x="20.32" y="111.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="22.86" y="105.41" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="276.86" y="220.98"/>
+<instance part="GND4" gate="1" x="276.86" y="218.44"/>
 <instance part="C6" gate="G$1" x="53.34" y="66.04" rot="R180"/>
-<instance part="C3" gate="G$1" x="307.34" y="231.14" smashed="yes" rot="MR180">
-<attribute name="NAME" x="308.737" y="231.775" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="309.626" y="229.235" size="1.778" layer="96" rot="MR180"/>
+<instance part="C3" gate="G$1" x="307.34" y="228.6" smashed="yes" rot="MR180">
+<attribute name="NAME" x="308.737" y="229.235" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="309.626" y="226.695" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND15" gate="1" x="12.7" y="76.2"/>
 <instance part="Y2" gate="G$1" x="40.64" y="88.9" smashed="yes">
@@ -6804,34 +6802,26 @@ Cut trace and solder to 3V3 to change</text>
 <attribute name="VALUE" x="278.765" y="243.84" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$2" gate="G$1" x="307.34" y="241.3"/>
-<instance part="C13" gate="G$1" x="320.04" y="228.6"/>
-<instance part="GND26" gate="1" x="320.04" y="220.98"/>
-<instance part="T2" gate="A" x="198.12" y="228.6" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="198.12" y="231.14" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="200.66" y="231.14" size="1.778" layer="95" rot="MR90"/>
+<instance part="C13" gate="G$1" x="320.04" y="226.06"/>
+<instance part="GND26" gate="1" x="320.04" y="218.44"/>
+<instance part="T2" gate="A" x="203.2" y="228.6" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="203.2" y="231.14" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="205.74" y="231.14" size="1.778" layer="95" rot="MR90"/>
 </instance>
-<instance part="R7" gate="G$1" x="190.5" y="215.9" rot="R180"/>
+<instance part="R7" gate="G$1" x="193.04" y="220.98" rot="R90"/>
 <instance part="P+14" gate="1" x="243.84" y="236.22" smashed="yes">
 <attribute name="VALUE" x="241.935" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="X3" gate="CONN" x="22.86" y="228.6"/>
-<instance part="TXLED" gate="G$1" x="144.78" y="198.12" rot="R180"/>
-<instance part="R1" gate="G$1" x="127" y="198.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="127" y="200.66" size="1.27" layer="95" font="vector" rot="R180" align="center"/>
-<attribute name="VALUE" x="127" y="198.12" size="1.016" layer="96" font="vector" ratio="15" rot="R180" align="center"/>
-</instance>
-<instance part="RXLED" gate="G$1" x="134.62" y="200.66" rot="R180"/>
-<instance part="R3" gate="G$1" x="119.38" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="119.38" y="203.2" size="1.27" layer="95" font="vector" rot="R180" align="center"/>
-<attribute name="VALUE" x="119.38" y="200.66" size="1.016" layer="96" font="vector" ratio="15" rot="R180" align="center"/>
-</instance>
+<instance part="X3" gate="CONN" x="20.32" y="228.6"/>
+<instance part="TXLED" gate="G$1" x="152.4" y="226.06" rot="R180"/>
+<instance part="R1" gate="G$1" x="139.7" y="226.06" rot="R180"/>
+<instance part="RXLED" gate="G$1" x="152.4" y="215.9" rot="R180"/>
+<instance part="R3" gate="G$1" x="139.7" y="215.9" rot="R180"/>
 <instance part="C1" gate="G$1" x="66.04" y="193.04"/>
 <instance part="U$18" gate="G$1" x="66.04" y="185.42"/>
-<instance part="F2" gate="G$1" x="38.1" y="241.3" rot="R180"/>
+<instance part="F2" gate="G$1" x="38.1" y="243.84" rot="R180"/>
 <instance part="GND8" gate="1" x="33.02" y="215.9"/>
-<instance part="U$1" gate="G$1" x="60.96" y="226.06"/>
-<instance part="C9" gate="G$1" x="66.04" y="215.9"/>
-<instance part="U$3" gate="G$1" x="66.04" y="210.82"/>
+<instance part="C9" gate="G$1" x="73.66" y="218.44"/>
 <instance part="C15" gate="G$1" x="58.42" y="193.04"/>
 <instance part="U$6" gate="G$1" x="58.42" y="185.42"/>
 <instance part="R6" gate="G$1" x="373.38" y="208.28" rot="R90"/>
@@ -6867,29 +6857,29 @@ Cut trace and solder to 3V3 to change</text>
 <instance part="GND6" gate="1" x="127" y="109.22" rot="R270"/>
 <instance part="FB1" gate="G$1" x="40.64" y="73.66"/>
 <instance part="X3" gate="SHIELD" x="12.7" y="205.74" rot="R180"/>
-<instance part="FB2" gate="G$1" x="38.1" y="203.2" rot="R90"/>
-<instance part="GROUND1" gate="1" x="38.1" y="195.58" rot="R270"/>
-<instance part="GND16" gate="1" x="38.1" y="187.96"/>
+<instance part="FB2" gate="G$1" x="38.1" y="200.66" rot="R90"/>
+<instance part="GROUND1" gate="1" x="38.1" y="190.5" rot="R270"/>
+<instance part="GND16" gate="1" x="38.1" y="180.34"/>
 <instance part="U5" gate="A" x="218.44" y="144.78"/>
-<instance part="U5" gate="B" x="332.74" y="121.92"/>
+<instance part="U5" gate="B" x="332.74" y="124.46"/>
 <instance part="U5" gate="P" x="218.44" y="144.78"/>
 <instance part="R15" gate="G$1" x="302.26" y="132.08" rot="R90"/>
 <instance part="R16" gate="G$1" x="302.26" y="116.84" rot="R90"/>
 <instance part="GND23" gate="1" x="302.26" y="106.68"/>
 <instance part="U$10" gate="G$1" x="302.26" y="142.24"/>
-<instance part="JP1" gate="G$1" x="198.12" y="215.9"/>
-<instance part="U3" gate="G$1" x="-91.44" y="218.44"/>
-<instance part="U$20" gate="G$1" x="-109.22" y="218.44"/>
-<instance part="C7" gate="G$1" x="-114.3" y="195.58"/>
-<instance part="U$22" gate="G$1" x="-114.3" y="187.96"/>
-<instance part="U3" gate="G$2" x="-116.84" y="259.08"/>
-<instance part="U$26" gate="G$1" x="-116.84" y="248.92"/>
-<instance part="U$24" gate="G$1" x="-124.46" y="241.3"/>
+<instance part="JP1" gate="G$1" x="203.2" y="215.9"/>
+<instance part="U3" gate="G$1" x="96.52" y="210.82"/>
+<instance part="U$20" gate="G$1" x="78.74" y="210.82"/>
+<instance part="C7" gate="G$1" x="73.66" y="187.96"/>
+<instance part="U$22" gate="G$1" x="73.66" y="180.34"/>
+<instance part="U3" gate="G$2" x="55.88" y="231.14"/>
+<instance part="U$26" gate="G$1" x="55.88" y="218.44"/>
+<instance part="U$24" gate="G$1" x="71.12" y="233.68"/>
 <instance part="VCC6" gate="G$1" x="134.62" y="152.4" smashed="yes"/>
 <instance part="U4" gate="G$1" x="289.56" y="231.14"/>
 <instance part="X2" gate="G$1" x="172.72" y="226.06"/>
-<instance part="SW2" gate="G$1" x="195.58" y="203.2" rot="R270"/>
-<instance part="GND24" gate="1" x="198.12" y="198.12"/>
+<instance part="SW2" gate="G$1" x="200.66" y="203.2" rot="R270"/>
+<instance part="GND24" gate="1" x="203.2" y="198.12"/>
 </instances>
 <busses>
 </busses>
@@ -6917,10 +6907,10 @@ Cut trace and solder to 3V3 to change</text>
 </segment>
 <segment>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="246.38" y1="116.84" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="254" y1="116.84" x2="254" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="T1" gate="A" pin="S"/>
-<label x="236.22" y="116.84" size="1.778" layer="95"/>
+<label x="243.84" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="276.86" y1="233.68" x2="279.4" y2="233.68" width="0.1524" layer="91"/>
@@ -7017,10 +7007,10 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="307.34" y1="226.06" x2="307.34" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="223.52" x2="307.34" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="276.86" y1="228.6" x2="276.86" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="228.6" x2="276.86" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="279.4" y1="228.6" x2="276.86" y2="228.6" width="0.1524" layer="91"/>
@@ -7036,14 +7026,6 @@ Cut trace and solder to 3V3 to change</text>
 <pinref part="Y2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="226.06" x2="175.26" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="175.26" y1="223.52" x2="175.26" y2="220.98" width="0.1524" layer="91"/>
-<junction x="175.26" y="223.52"/>
-<pinref part="X2" gate="G$1" pin="GNDBREAK"/>
-<pinref part="X2" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="ADJ"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="231.14" y1="210.82" x2="231.14" y2="220.98" width="0.1524" layer="91"/>
@@ -7055,7 +7037,7 @@ Cut trace and solder to 3V3 to change</text>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="226.06" x2="320.04" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="223.52" x2="320.04" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -7066,11 +7048,8 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="X3" gate="CONN" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="30.48" y1="223.52" x2="33.02" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="223.52" x2="33.02" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="GND"/>
@@ -7099,6 +7078,7 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="GROUND1" gate="1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="38.1" y1="182.88" x2="38.1" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="P" pin="V-"/>
@@ -7113,21 +7093,35 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="U$22" gate="G$1" pin="GND"/>
-<wire x1="-114.3" y1="193.04" x2="-114.3" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="185.42" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="U$20" gate="G$1" pin="GND"/>
-<wire x1="-106.68" y1="223.52" x2="-109.22" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="223.52" x2="-109.22" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="215.9" x2="78.74" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="215.9" x2="78.74" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="215.9" x2="78.74" y2="215.9" width="0.1524" layer="91"/>
+<junction x="78.74" y="215.9"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$2" pin="TP"/>
 <pinref part="U$26" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="223.52" x2="55.88" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SW2" gate="G$1" pin="O"/>
 <pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="GNDBREAK"/>
+<wire x1="175.26" y1="226.06" x2="180.34" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="180.34" y1="226.06" x2="180.34" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
+<wire x1="180.34" y1="223.52" x2="180.34" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="223.52" x2="180.34" y2="223.52" width="0.1524" layer="91"/>
+<junction x="180.34" y="223.52"/>
 </segment>
 </net>
 <net name="AREF" class="4">
@@ -7210,7 +7204,7 @@ Cut trace and solder to 3V3 to change</text>
 <pinref part="PC1" gate="G$1" pin="+"/>
 <wire x1="213.36" y1="223.52" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <junction x="213.36" y="228.6"/>
-<wire x1="203.2" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <label x="215.9" y="228.6" size="1.778" layer="95"/>
 <pinref part="T2" gate="A" pin="D"/>
 </segment>
@@ -7242,33 +7236,33 @@ Cut trace and solder to 3V3 to change</text>
 <net name="PWRIN" class="1">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<label x="172.72" y="231.14" size="1.778" layer="95"/>
-<wire x1="175.26" y1="228.6" x2="177.8" y2="228.6" width="0.1524" layer="91"/>
+<label x="172.72" y="233.68" size="1.778" layer="95"/>
+<wire x1="175.26" y1="228.6" x2="185.42" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="X3" gate="CONN" pin="D-"/>
-<wire x1="33.02" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
 <label x="35.56" y="228.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="D-"/>
-<wire x1="-139.7" y1="208.28" x2="-106.68" y2="208.28" width="0.1524" layer="91"/>
-<label x="-119.38" y="208.28" size="1.778" layer="95"/>
+<wire x1="71.12" y1="200.66" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
+<label x="73.66" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="X3" gate="CONN" pin="D+"/>
-<wire x1="33.02" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
 <label x="35.56" y="231.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="D+"/>
-<wire x1="-139.7" y1="210.82" x2="-106.68" y2="210.82" width="0.1524" layer="91"/>
-<label x="-119.38" y="210.82" size="1.778" layer="95"/>
+<wire x1="71.12" y1="203.2" x2="81.28" y2="203.2" width="0.1524" layer="91"/>
+<label x="73.66" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -7319,22 +7313,22 @@ Cut trace and solder to 3V3 to change</text>
 <net name="DTR" class="0">
 <segment>
 <pinref part="U5" gate="B" pin="+IN"/>
-<wire x1="325.12" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
-<label x="309.88" y="124.46" size="1.778" layer="95"/>
+<wire x1="325.12" y1="127" x2="309.88" y2="127" width="0.1524" layer="91"/>
+<label x="309.88" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="DTR"/>
-<wire x1="-76.2" y1="208.28" x2="-63.5" y2="208.28" width="0.1524" layer="91"/>
-<label x="-73.66" y="208.28" size="1.778" layer="95"/>
+<wire x1="111.76" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
+<label x="114.3" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GATE_CMD" class="0">
 <segment>
-<wire x1="233.68" y1="121.92" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
-<label x="233.68" y="124.46" size="1.778" layer="95" rot="R90"/>
+<wire x1="238.76" y1="121.92" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
+<label x="238.76" y="124.46" size="1.778" layer="95" rot="R90"/>
 <pinref part="T1" gate="A" pin="G"/>
 <pinref part="U5" gate="A" pin="OUT"/>
-<wire x1="226.06" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CMP" class="0">
@@ -7343,7 +7337,7 @@ Cut trace and solder to 3V3 to change</text>
 <wire x1="198.12" y1="147.32" x2="198.12" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
 <junction x="198.12" y="147.32"/>
-<label x="205.74" y="147.32" size="1.778" layer="95"/>
+<label x="200.66" y="147.32" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="U5" gate="A" pin="+IN"/>
@@ -7351,38 +7345,35 @@ Cut trace and solder to 3V3 to change</text>
 </net>
 <net name="USBVCC" class="3">
 <segment>
-<wire x1="215.9" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
 <label x="215.9" y="116.84" size="1.778" layer="95"/>
 <pinref part="T1" gate="A" pin="D"/>
 </segment>
 <segment>
-<pinref part="F2" gate="G$1" pin="2"/>
-<label x="48.26" y="241.3" size="1.778" layer="95"/>
-<wire x1="152.4" y1="198.12" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="RXLED" gate="G$1" pin="A"/>
-<wire x1="139.7" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
-<junction x="152.4" y="200.66"/>
-<pinref part="TXLED" gate="G$1" pin="A"/>
-<wire x1="149.86" y1="198.12" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="200.66" x2="152.4" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="241.3" x2="43.18" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="205.74" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="198.12" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
-<junction x="66.04" y="205.74"/>
 <wire x1="66.04" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
-<label x="53.34" y="205.74" size="1.778" layer="95"/>
+<label x="48.26" y="205.74" size="1.778" layer="95"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="205.74" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="205.74" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="205.74" x2="58.42" y2="198.12" width="0.1524" layer="91"/>
 <junction x="58.42" y="205.74"/>
-</segment>
-<segment>
+<pinref part="F2" gate="G$1" pin="2"/>
+<label x="48.26" y="243.84" size="1.778" layer="95"/>
+<wire x1="157.48" y1="226.06" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="RXLED" gate="G$1" pin="A"/>
+<wire x1="157.48" y1="215.9" x2="160.02" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="215.9" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
+<junction x="160.02" y="226.06"/>
+<pinref part="TXLED" gate="G$1" pin="A"/>
+<wire x1="160.02" y1="226.06" x2="160.02" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="243.84" x2="45.72" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="243.84" x2="43.18" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="205.74" x2="45.72" y2="243.84" width="0.1524" layer="91"/>
+<junction x="45.72" y="243.84"/>
 <pinref part="U3" gate="G$1" pin="VBUS"/>
-<wire x1="-119.38" y1="213.36" x2="-106.68" y2="213.36" width="0.1524" layer="91"/>
-<label x="-119.38" y="213.36" size="1.778" layer="95"/>
+<wire x1="66.04" y1="205.74" x2="81.28" y2="205.74" width="0.1524" layer="91"/>
+<junction x="66.04" y="205.74"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -7407,6 +7398,7 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="X3" gate="SHIELD" pin="1"/>
 <wire x1="15.24" y1="205.74" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="205.74" x2="38.1" y2="203.2" width="0.1524" layer="91"/>
 <label x="27.94" y="205.74" size="1.778" layer="95"/>
 <pinref part="FB2" gate="G$1" pin="P$2"/>
 </segment>
@@ -7603,14 +7595,6 @@ Cut trace and solder to 3V3 to change</text>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="3.3V"/>
-<wire x1="60.96" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="223.52" x2="76.2" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="223.52" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
-<junction x="66.04" y="223.52"/>
-</segment>
-<segment>
 <wire x1="210.82" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="3.3V"/>
 <pinref part="U5" gate="A" pin="-IN"/>
@@ -7633,44 +7617,47 @@ Cut trace and solder to 3V3 to change</text>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD"/>
-<wire x1="-106.68" y1="236.22" x2="-109.22" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="236.22" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="236.22" x2="-124.46" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="228.6" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="228.6" x2="73.66" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VIO"/>
-<wire x1="-106.68" y1="238.76" x2="-109.22" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="238.76" x2="-109.22" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-109.22" y="236.22"/>
-<wire x1="-124.46" y1="236.22" x2="-124.46" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="228.6" x2="71.12" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="231.14" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
+<junction x="78.74" y="228.6"/>
+<wire x1="71.12" y1="228.6" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="U$24" gate="G$1" pin="3.3V"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="223.52" x2="73.66" y2="226.06" width="0.1524" layer="91"/>
+<junction x="73.66" y="228.6"/>
 <pinref part="U3" gate="G$1" pin="REGIN"/>
-<wire x1="-106.68" y1="233.68" x2="-114.3" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="233.68" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-114.3" y="236.22"/>
+<wire x1="73.66" y1="226.06" x2="73.66" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="226.06" x2="73.66" y2="226.06" width="0.1524" layer="91"/>
+<junction x="73.66" y="226.06"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="OUT"/>
-<wire x1="299.72" y1="233.68" x2="299.72" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="236.22" x2="307.34" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="236.22" x2="307.34" y2="233.68" width="0.1524" layer="91"/>
-<junction x="307.34" y="236.22"/>
+<wire x1="299.72" y1="233.68" x2="307.34" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="233.68" x2="307.34" y2="231.14" width="0.1524" layer="91"/>
+<junction x="307.34" y="233.68"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
-<wire x1="307.34" y1="238.76" x2="307.34" y2="236.22" width="0.1524" layer="91"/>
-<junction x="307.34" y="236.22"/>
-<wire x1="307.34" y1="236.22" x2="320.04" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="238.76" x2="307.34" y2="233.68" width="0.1524" layer="91"/>
+<junction x="307.34" y="233.68"/>
+<wire x1="307.34" y1="233.68" x2="320.04" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="320.04" y1="236.22" x2="320.04" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="233.68" x2="320.04" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="215.9" x2="195.58" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="215.9" x2="200.66" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="A" pin="G"/>
-<wire x1="195.58" y1="215.9" x2="195.58" y2="223.52" width="0.1524" layer="91"/>
-<junction x="195.58" y="215.9"/>
+<wire x1="200.66" y1="215.9" x2="200.66" y2="223.52" width="0.1524" layer="91"/>
+<junction x="200.66" y="215.9"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="SW2" gate="G$1" pin="P"/>
+<wire x1="200.66" y1="215.9" x2="193.04" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -7680,9 +7667,9 @@ Cut trace and solder to 3V3 to change</text>
 <pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="-76.2" y1="203.2" x2="-63.5" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="TXD"/>
-<label x="-73.66" y="203.2" size="1.778" layer="95"/>
+<label x="114.3" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -7692,54 +7679,49 @@ Cut trace and solder to 3V3 to change</text>
 <pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="-63.5" y1="200.66" x2="-76.2" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="193.04" x2="111.76" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="RXD"/>
-<label x="-73.66" y="200.66" size="1.778" layer="95"/>
+<label x="114.3" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="X3" gate="CONN" pin="VBUS"/>
-<wire x1="33.02" y1="241.3" x2="33.02" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="243.84" x2="33.02" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="233.68" x2="30.48" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXLED" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="200.66" x2="114.3" y2="200.66" width="0.1524" layer="91"/>
-<label x="104.14" y="200.66" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="GPIO1/RXLED"/>
-<wire x1="-76.2" y1="223.52" x2="-55.88" y2="223.52" width="0.1524" layer="91"/>
-<label x="-71.12" y="223.52" size="1.778" layer="95"/>
+<wire x1="111.76" y1="215.9" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
+<label x="116.84" y="215.9" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="RXLED" gate="G$1" pin="C"/>
-<wire x1="124.46" y1="200.66" x2="132.08" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="215.9" x2="149.86" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXLED" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="198.12" x2="111.76" y2="198.12" width="0.1524" layer="91"/>
-<label x="104.14" y="198.12" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="GPIO0/TXLED"/>
-<wire x1="-76.2" y1="226.06" x2="-55.88" y2="226.06" width="0.1524" layer="91"/>
-<label x="-71.12" y="226.06" size="1.778" layer="95"/>
+<label x="116.84" y="226.06" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="226.06" x2="114.3" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="226.06" x2="114.3" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="218.44" x2="111.76" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="TXLED" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="198.12" x2="142.24" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="226.06" x2="149.86" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7793,6 +7775,7 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="FB2" gate="G$1" pin="P$1"/>
 <pinref part="GROUND1" gate="1" pin="1"/>
+<wire x1="38.1" y1="195.58" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -7800,18 +7783,16 @@ Cut trace and solder to 3V3 to change</text>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="302.26" y1="121.92" x2="302.26" y2="127" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="121.92" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="121.92" x2="314.96" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="121.92" x2="325.12" y2="121.92" width="0.1524" layer="91"/>
 <junction x="302.26" y="121.92"/>
 <pinref part="U5" gate="B" pin="-IN"/>
-<wire x1="314.96" y1="119.38" x2="325.12" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DTR_5V" class="0">
 <segment>
 <pinref part="U5" gate="B" pin="OUT"/>
-<wire x1="340.36" y1="121.92" x2="353.06" y2="121.92" width="0.1524" layer="91"/>
-<label x="342.9" y="121.92" size="1.778" layer="95"/>
+<wire x1="340.36" y1="124.46" x2="353.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="342.9" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="91.44" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
@@ -7824,19 +7805,19 @@ Cut trace and solder to 3V3 to change</text>
 <segment>
 <pinref part="T2" gate="A" pin="S"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="182.88" y1="228.6" x2="185.42" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="228.6" x2="193.04" y2="228.6" width="0.1524" layer="91"/>
-<junction x="185.42" y="228.6"/>
+<wire x1="190.5" y1="228.6" x2="193.04" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="228.6" x2="198.12" y2="228.6" width="0.1524" layer="91"/>
+<junction x="193.04" y="228.6"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="215.9" x2="185.42" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="226.06" x2="193.04" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VPP"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="-106.68" y1="203.2" x2="-114.3" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="203.2" x2="-114.3" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="195.58" x2="73.66" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="195.58" x2="73.66" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7847,19 +7828,8 @@ Cut trace and solder to 3V3 to change</text>
 <approved hash="104,1,63.5,73.66,ZU4,AGND,GND,,,"/>
 <approved hash="104,1,218.44,152.4,U5P,V+,+5V,,,"/>
 <approved hash="104,1,218.44,137.16,U5P,V-,GND,,,"/>
-<approved hash="202,1,-76.2,213.36,U3G$1,RI,,,,"/>
-<approved hash="104,1,-106.68,238.76,U3G$1,VIO,3.3V,,,"/>
-<approved hash="104,1,-106.68,236.22,U3G$1,VDD,3.3V,,,"/>
-<approved hash="104,1,-106.68,233.68,U3G$1,REGIN,3.3V,,,"/>
-<approved hash="104,1,-106.68,213.36,U3G$1,VBUS,USBVCC,,,"/>
-<approved hash="202,1,-76.2,210.82,U3G$1,DCD,,,,"/>
-<approved hash="202,1,-76.2,205.74,U3G$1,DSR,,,,"/>
-<approved hash="202,1,-76.2,195.58,U3G$1,CTS,,,,"/>
-<approved hash="104,1,-116.84,251.46,U3G$2,TP,GND,,,"/>
 <approved hash="104,1,175.26,228.6,X2,PWR,PWRIN,,,"/>
 <approved hash="104,1,175.26,226.06,X2,GNDBREAK,GND,,,"/>
-<approved hash="115,1,39.6155,194.884,GROUND1,,,,,"/>
-<approved hash="115,1,195.817,217.301,JP1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
